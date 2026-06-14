@@ -153,14 +153,26 @@ document.addEventListener("keydown", (event) => {
 
     if (!musicStarted) {
       bgMusic.volume = 0.25;
-      bgMusic.play();
+      bgMusic.play().catch((error) => {
+      console.log("Music failed:", error);
+    });
       musicStarted = true;
     }
 
     attempt();
   }
 });
-button.addEventListener("click", attempt);
+button.addEventListener("click", () => {
+  if (!musicStarted) {
+    bgMusic.volume = 0.25;
+    bgMusic.play().catch((error) => {
+      console.log("Music failed:", error);
+    });
+    musicStarted = true;
+  }
+
+  attempt();
+});
 restart.addEventListener("click", reset);
 window.addEventListener("resize", placeTarget);
 
