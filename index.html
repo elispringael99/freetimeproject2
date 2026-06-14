@@ -44,36 +44,104 @@
 
     </div>
 
-   <section class="celebration hidden" id="final">
-      <div class="confetti-container" id="confetti"></div>
 
-      <h1>🎉 HAPPY BIRTHDAY SHARMEEN 🎉</h1>
-
-      <p class="celebrate-text">
-        YOU DID IT!!
-      </p>
-
-      <div class="cake-rain">
-        🎂 🎂 🍰 🎂 🍰 🎂 🍰 🎂
+     <div id="giraffeWarning" class="giraffe-warning hidden">
+      <div class="warning-text">
+        WAIT...
         <br><br>
-        🎂 🍰 🎂 🍰 🎂 🍰 🎂 🍰
+        WHAT'S HAPPENING?!
+        <br><br>
+        🦒
       </div>
+    </div>
 
-      <p class="love-message">
-      YEYYYYYYYYYYYYYY HAPPY BIRTHDAYYYYYYYYYYYYYYYYYY
 
-      <br><br><br>
+   <section class="celebration hidden" id="final">
+     
+  <div class="confetti-container" id="confetti"></div>
 
-      I hope this year brings you happiness,
-      laughter, adventures, and lots of (healthy) cake!!
+  <h1 class="reveal reveal-1">🎉 HAPPY BIRTHDAY SHARMEEN 🎉</h1>
+
+  <p class="celebrate-text reveal reveal-2">
+    YOU DID IT!!
+  </p>
+
+  <div class="achievements reveal reveal-3">
+    <div class="achievement">🏆 Achievement Unlocked: Birthday Successfully Completed</div>
+    <div class="achievement">🦒 Achievement Unlocked: Approved By The Giraffe Council</div>
+    <div class="achievement">🎂 Candles blown: <span id="finalCandles">6/6</span></div>
+    <div class="achievement">💗 Space presses: <span id="finalPresses">0</span></div>
+    <div class="achievement">😭 Misses: <span id="finalMisses">0</span></div>
+    <div class="achievement">🦒 Giraffes unleashed: <span id="finalGiraffes">0</span></div>
+  </div>
+
+  <div class="letter-area reveal reveal-4">
+
+  <button class="envelope" id="openLetter">
+    ✉️
+    <div>A Letter for Sharmeen</div>
+  </button>
+
+  <div class="letter hidden" id="birthdayLetter">
+
+    <h2>Dear Sharmeeeeeeeeeeeen</h2>
+
+    <p>
+       YEYYYYYYYYYYYYYYY HAPPY BIRTHDAY!!!!!!
     </p>
 
-      <button id="restart">Play Again </button>
+    <p>
+      This is just a letter, nothing special. So don't expect to much!! Luckily its virtual so I can delete it whenever I want WHOEHAHAHAHAHAH
+    </p>
+
+       <p>
+      First some nice stuff, can only do this one time a year you know.
+    </p>
+
+    <p>
+      Thank you for all the laughs and random conversations this year!
+    </p>
+
+    <p>
+      I hope this year brings you lots of happiness, lots of memories,
+      lots of success, and hopefully lots of (healthy) cake (or ice cream) too 🎂
+    </p>
+
+    <p>
+      Also I hope you appreciate the fact that thousands of giraffes
+      were unleashed in your honor today. As approved by the giraffe council.
+    </p>
+
+       <p>
+      Okay that was enough nice stuff for today.
+    </p>
+
+    <p>
+      Happy Anniversary!!! And officially welcome to the dino club! 🦖🦕
+    </p>
+
+    <p class="signature">
+      - Some Random Person
+    </p>
+
+  </div>
+
+</div>
+
+  <button id="restart" class="reveal reveal-5">Play Again</button>
     </section>
   </main>
 
 <audio id="bgMusic" loop>
   <source src="birthday01.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="heartbeatSound">
+  <source src="heartbeat.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="lionMusic" loop>
+  <source src="lion.mp3" type="audio/mpeg">
 </audio>
 
   <script src="script.js"></script>
