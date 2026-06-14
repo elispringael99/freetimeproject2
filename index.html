@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A Tiny Cake Quest</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="sparkles" aria-hidden="true"></div>
+
+  <main class="card">
+
+     <div id="gameScreen">
+    <p class="eyebrow">Happy Birthday Sharmeen!!!!!!!</p>
+    <h1>Make a wish 🎂</h1>
+    <p class="message">Press <kbd>Space</kbd> when the giraffe is inside the red zone to blow out the candles.</p>
+
+    <section class="cake-wrap" aria-label="Virtual birthday cake">
+      <div class="plate"></div>
+      <div class="cake">
+        <div class="icing"></div>
+        <div class="candles" id="candles"></div>
+        <div class="cake-body">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="game">
+      <div class="stats">
+        <span>Round: <strong id="round">1</strong></span>
+        <span>Candles left: <strong id="left">6</strong></span>
+      </div>
+
+      <div class="bar" id="bar" aria-label="Timing bar">
+        <div class="target" id="target"></div>
+        <div class="marker" id="marker">🦒</div>
+      </div>
+
+      <button id="tryButton">Blow with Space</button>
+      <p id="status">Ready? Find the red moment.</p>
+    </section>
+
+    </div>
+
+   <section class="celebration hidden" id="final">
+      <div class="confetti-container" id="confetti"></div>
+
+      <h1>🎉 HAPPY BIRTHDAY SHARMEEN 🎉</h1>
+
+      <p class="celebrate-text">
+        YOU DID IT!!
+      </p>
+
+      <div class="cake-rain">
+        🎂 🎂 🍰 🎂 🍰 🎂 🍰 🎂
+        <br><br>
+        🎂 🍰 🎂 🍰 🎂 🍰 🎂 🍰
+      </div>
+
+      <p class="love-message">
+      YEYYYYYYYYYYYYYY HAPPY BIRTHDAYYYYYYYYYYYYYYYYYY
+
+      <br><br><br>
+
+      I hope this year brings you happiness,
+      laughter, adventures, and lots of (healthy) cake!!
+    </p>
+
+      <button id="restart">Play Again </button>
+    </section>
+  </main>
+
+<audio id="bgMusic" autoplay loop>
+  <source src="birthday01.mp3" type="audio/mpeg">
+</audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
