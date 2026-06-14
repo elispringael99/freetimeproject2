@@ -18,6 +18,7 @@ const gameScreen = document.getElementById("gameScreen");
 
 const missMessages = [
   "SO SLOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOW 🐌",
+  "MEMORY YES, BUT SPACE BAR SKILLS NON EXISTENTT",
   "WE DON'T HAVE ALL DAYYYYYYYYY 😭",
   "Almost! Still too slow tho tss tsss 😌",
   "You know you gotta hit when it's on the bar right 🤨",
