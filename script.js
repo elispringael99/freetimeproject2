@@ -1,11 +1,7 @@
 const bgMusic = document.getElementById("bgMusic");
+let musicStarted = false;
 
-window.addEventListener("load", () => {
-  bgMusic.volume = 0.25;
-  bgMusic.play().catch(() => {
-    console.log("Autoplay blocked by browser");
-  });
-});
+
 
 const candleCount = 6;
 const candlesEl = document.getElementById("candles");
@@ -154,6 +150,13 @@ function reset() {
 document.addEventListener("keydown", (event) => {
   if (event.code === "Space") {
     event.preventDefault();
+
+    if (!musicStarted) {
+      bgMusic.volume = 0.25;
+      bgMusic.play();
+      musicStarted = true;
+    }
+
     attempt();
   }
 });
